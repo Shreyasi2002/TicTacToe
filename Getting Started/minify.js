@@ -1,9 +1,9 @@
-const minify = require("minify");
+const minify = require('minify')
 const options = {
-  html: {
-    removeAttributeQuotes: false,
-    removeOptionalTags: false,
-  },
-};
+    html: {
+        removeAttributeQuotes: false,
+        removeOptionalTags: false,
+    },
+}
 
-minify("./welcome.js", options).then(console.log).catch(console.error);
+minify('./welcome.js', options).then(console.log).catch(console.error)

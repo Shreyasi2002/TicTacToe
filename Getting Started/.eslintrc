@@ -7,5 +7,5 @@
     "ecmaVersion": "latest"
   },
 
-  "extends": "eslint-recommended"
+  "extends": ["eslint-recommended", "prettier"]
 }
