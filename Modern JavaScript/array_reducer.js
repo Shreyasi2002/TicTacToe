@@ -38,5 +38,12 @@ the value at 0th index when the iteration through the array begins.
                  6 + 4 = 10
 4th iteration => acc = 10
                  val = 5
-                 10 + 5 = 15               
+                 10 + 5 = 15   
+                 
+                 
+The above code can also be written as -
 */
+
+const sumOfElements = arr.reduce((acc, val) => {
+  return acc + val;
+}, 0);
