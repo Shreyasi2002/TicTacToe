@@ -47,3 +47,44 @@ console.log(myAge, myHobby, myName);
 We get the output -
 18 Singing Shreyasi
 */
+
+// Now, let's define an array
+
+const elements = ["I", "am", "learning", "React.JS"];
+
+// Now we can use indexing to refer to a particular element
+
+const first = elements[0];
+
+/* 
+Remember, while destructuring, the order in which you want the elements to be 
+should be exactly the same.
+*/
+
+const [firstEl, secondEl, , fourthEl] = elements;
+
+// We have omitted the third element by using space.
+
+console.log(firstEl, secondEl, fourthEl);
+
+/*
+We get the output -
+I am React.JS
+*/
+
+// Using functions
+
+function destructure({ name } = {}, [firstElement] = []) {
+  console.log(name, firstElement);
+}
+
+destructure(person, elements);
+
+/*
+It's necessary to specify callback value / default value while specifying 
+arguments, in case -
+  destructure()
+  
+Let's see the output -
+Shreyasi I
+*/
